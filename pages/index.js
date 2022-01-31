@@ -3,16 +3,20 @@ import Link from 'next/link';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import Resultcard from '../components/Result-card';
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
+      <div className="hero">
+        house image
+      </div>
       <h1>Decision in Principle</h1>
+      <hr className="hr-red" />
       <h2>Your result</h2>
-      <p>Good news Jamie, we could lend you:</p>
-      <h3>£200,000 over 31 years 2 months</h3>      
+      <Resultcard />
       <Link href="/access-dashboard">
-        <a>Access your mortgage dashboard</a>
+        <a className="nbs-btn-primary">Access mortgage dashboard</a>
       </Link>
   </div>
   )
