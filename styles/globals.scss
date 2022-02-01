@@ -1,36 +1,4 @@
-// Colours primary
-$colourBrand01: #002979;
-$colourBrand02: #ED0B14;
-$colourBrand03: #ffffff;
-
-// Colours secondary
-$colourSecondaryPink100: #E01F7B;
-$colourSecondaryPurple100: #582C83;
-$colourSecondaryNavy100: #09133A;
-
-// Colours tertiary
-$colourTertiaryOrange100: #FB6B44;
-
-// Colour text
-$colourTextHeadline: #13131F;
-$colourTextBody: #42424C;
-
-// Interactions
-// CTAs and links
-$colourInteractionPrimary100: $colourBrand01;
-
-// Link hover etc
-$colourInteractionFeedback100: #006AC0;
-
-// Button hover box shadow
-$colourInteractionFeedback50: #81B6E0;
-
-// Success
-$colourInteractionSuccess100: #3B8634;
-
-// Success bgd
-$colourInteractionSuccess10: #EBF3EB;
-
+@import 'colours';
 
 html,
 body {
@@ -39,6 +7,7 @@ body {
   color: $colourTextBody;
   font-family: 'NBS-Medium', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 // Class lives is in the Layout.js component
@@ -46,15 +15,19 @@ body {
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
-  margin-bottom: 60px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 a {
   color: inherit;
   text-decoration: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
+
+  @media (min-width: 480px) {
+		font-size: 20px;
+	}
 }
 
 .nbs-link {
@@ -97,8 +70,24 @@ h1 {
 	}
 }
 
+h3 {
+  font-family: 'CabernetJFPro';
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+  -webkit-font-smoothing: antialiased;
+
+  @media (min-width: 480px) {
+		font-size: 28px;
+	}
+}
+
 h2, h3, h4 {
   font-family: 'NBS-Bold', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.p-lead {
+  color: turquoise;
 }
 
 .hr-red {
@@ -136,6 +125,19 @@ h2, h3, h4 {
   @media (min-width: 480px) {
 		background: red;
 	}
+}
+
+.nbs-btn-secondary {
+  display: inline-flex;
+  font-family: 'NBS-Bold', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
+  background: $colourBrand03;
+  color: $colourBrand01;
+  cursor: inherit;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 999px;
+  border: 2px solid #002979;
+  padding: 4px 22px;
 }
 
 .hero {

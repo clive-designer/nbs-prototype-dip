@@ -41,7 +41,6 @@ export default function Home() {
       <h3>Ready to apply for a mortgage?</h3>
       <p>That&apos;s great! Head over to your mortgage dashboard where you can complete your application in your own time.</p>
 
-
       <Link href="/access-dashboard">
         <a className="nbs-btn-primary">Access mortgage dashboard</a>
       </Link>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/Information/Tick/Small</title>
+    <g id="Save-&amp;-Return-flow-sign-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mortgage-dashboard-mobile" transform="translate(-30.000000, -1063.000000)" fill="#3B8634">
+            <g id="Steps" transform="translate(17.000000, 599.000000)">
+                <g id="Icon-Fill" transform="translate(13.000000, 464.000000)">
+                    <path d="M18.207,9.207 L10.207,17.207 C10.012,17.402 9.756,17.5 9.5,17.5 C9.244,17.5 8.988,17.402 8.793,17.207 L5.293,13.707 C4.902,13.316 4.902,12.684 5.293,12.293 C5.684,11.902 6.316,11.902 6.707,12.293 L9.5,15.086 L16.793,7.793 C17.184,7.402 17.816,7.402 18.207,7.793 C18.598,8.184 18.598,8.816 18.207,9.207 M12,0 C5.373,0 0,5.373 0,12 C0,18.627 5.373,24 12,24 C18.627,24 24,18.627 24,12 C24,5.373 18.627,0 12,0"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

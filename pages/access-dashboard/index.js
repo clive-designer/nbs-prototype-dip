@@ -3,10 +3,7 @@ import { useUser } from '@auth0/nextjs-auth0';
 
 import Link from 'next/link';
 
-const AccessDashboard = () => {
-    // If I want to show user certain content once they have logged in
-    // then un comment these lines based on this: https://www.youtube.com/watch?v=jgKRnhJBfpQ
-    
+const AccessDashboard = () => {    
     const { user, error, isLoading } = useUser();
 
     console.log(user);
@@ -18,13 +15,11 @@ const AccessDashboard = () => {
         return (
           <div>
             <h1>Hi {user.email}</h1>
-            {/* <a href="/api/auth/logout">Logout</a> */}
             
             <Link href="/api/auth/logout">
               <a>Logout</a>
             </Link>
             <p>Or</p>
-            {/* <a href="/dashboard/">Go to your dashboard</a> */}
             
             <Link href="/dashboard/">
                 <a>Go to your dashboard</a>

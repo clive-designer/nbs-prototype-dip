@@ -1,0 +1,13 @@
+@import '../../styles/colours';
+
+.dashboardHero {
+    background: $colourInteractionSuccess10;
+    width: 280px;
+}
+
+.messageSuccess {
+    background: $colourInteractionSuccess10;
+    border-radius: 8px;
+    padding: 32px;
+    margin-top: 16px;
+}
