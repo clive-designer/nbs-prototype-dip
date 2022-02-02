@@ -1,6 +1,8 @@
 import React from "react";
 import { useUser } from '@auth0/nextjs-auth0';
 
+import styles from './Access-dashboard.module.scss';
+
 import Link from 'next/link';
 
 const AccessDashboard = () => {    
@@ -29,17 +31,14 @@ const AccessDashboard = () => {
     }
 
     return (
-        <div>
+        <div className={styles.accessDashboardContainer}>
             <h1>Access your mortgage dashboard</h1>
-            <p>When you log in, we may ask you to go through a 2-step verification process using your mobile device and email account. This helps us keep your information safe.</p>
-            <br />
-            <br />
-            <br />
-            {/* <a href="/dashboard/">Login</a> */}
-            
+            <p className={styles.pAccessDashboard}>When you log in, we may ask you to go through a 2-step verification process using your mobile device and email account. This helps us keep your information safe.</p>
+
             <Link href="/dashboard/">
-                <a>Login</a>
+              <a className="nbs-btn-primary">Log in</a>
             </Link>
+
         </div>
     )
 }

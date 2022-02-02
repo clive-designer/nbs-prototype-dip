@@ -1,9 +1,24 @@
 .optionCard {
-    padding: 16px;
     box-shadow: 0 1px 2px 1px rgb(113 113 121 / 50%);
     border-radius: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-column-gap: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+    padding: 16px;
+
+    .optionCardText {
+      p {
+        margin: 0;
+      }
+    }
 
     @media (min-width: 480px) {
 		padding: 32px;
 	}
+
+  &:last-child {
+    margin-top: 16px;
+  }
 }

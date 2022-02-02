@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
             <div className="nav-content">
                 <div className="nav-ref">
-                    <p>Ref:M123456789</p>
+                    <p>Ref: M123456789</p>
                 </div>
                 <div>
                     <Link href="/access-dashboard">
