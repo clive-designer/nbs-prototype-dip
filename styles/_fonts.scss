@@ -1,0 +1,24 @@
+@font-face {
+  font-family: NBS;
+  font-weight: 300;
+  src: url(/assets/NBS-Light.woff) format('woff'), url(/assets/NBS-Light.woff2) format('woff2');
+}
+@font-face {
+  font-family: NBS;
+  font-weight: 400;
+  src: url(/assets/NBS-Medium.woff) format('woff'), url(/assets/NBS-Medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: NBS;
+  font-weight: 600;
+  src: url(/assets/NBS-Bold.woff) format('woff'), url(/assets/NBS-Bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: CabernetJFPro;
+  font-weight: 600;
+  src: url(/assets/CabernetJFPro-Regular.woff) format('woff'), url(/assets/CabernetJFPro-Regular.woff2) format('woff2');
+}
+[type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner, button::-moz-focus-inner {
+  outline: 0;
+  border-style: none;
+}
