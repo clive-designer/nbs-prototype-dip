@@ -59,7 +59,7 @@ const Dashboardcard = () => {
                     </div>
                     <div className={styles.dashboardCardText}>
                         <h3>Step 3: Chat to a mortgage expert</h3>
-                        <p>Complete your  application with one of our mortgage experts. Your reference is: <strong>M123456</strong></p>
+                        <p>Complete your  application with one of our mortgage experts. Your reference is: <strong>M123456789</strong></p>
                         <Link href="#">
                             <a className="nbs-btn-secondary">Let&apos;s chat</a>
                         </Link>

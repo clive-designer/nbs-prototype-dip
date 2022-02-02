@@ -1,13 +1,15 @@
 import Navbar from "../navbar/Navbar";
 
+import styles from './Layout.module.scss';
+
 const Layout = ({ children }) => {
     return (
         <div>
-            <div className="navbar-clive">
-            <Navbar />
+            <div className="flex-nav-container">
+                <Navbar />
             </div>
             
-            <div className="flex-container">
+            <div className="flex-main-container">
                 {children}
             </div>
         </div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="49px" viewBox="0 0 36 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Log out button icon</title>
+    <g id="08---Save-&amp;-Return-feature" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hub" transform="translate(-1044.000000, -130.000000)">
+            <g id="Log-out-button-icon" transform="translate(1044.000000, 130.000000)">
+                <text id="Log-out" font-family="NBS-Bold, NBS Medium" font-size="12" font-weight="bold" fill="#002979">
+                    <tspan x="0.005859375" y="46">Log out</tspan>
+                </text>
+                <g id="Icons/Action/40px/Phone" transform="translate(18.000000, 16.000000) scale(-1, 1) translate(-18.000000, -16.000000) translate(2.000000, 0.000000)">
+                    <g id="Guide/Action-40px" style="mix-blend-mode: multiply;">
+                        <path d="M32,0 L32,32 L0,32 L0,0 L32,0 Z M24,8 L8,8 L8,24 L24,24 L24,8 Z" id="Boundary" fill="#E5F0F9" opacity="0"></path>
+                        <g id="logout_black_24dp" transform="translate(7.000000, 8.000000)" fill="#002979" fill-rule="nonzero">
+                            <path d="M11.5,3.55555556 L10.231,4.80888889 L12.553,7.11111111 L3.4,7.11111111 L3.4,8.88888889 L12.553,8.88888889 L10.231,11.1822222 L11.5,12.4444444 L16,8 L11.5,3.55555556 Z M1.8,1.77777778 L5,1.77777778 L5,0 L1.8,0 C0.81,0 0,0.8 0,1.77777778 L0,14.2222222 C0,15.2 0.81,16 1.8,16 L5,16 L5,14.2222222 L1.8,14.2222222 L1.8,1.77777778 Z" id="Shape" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) "></path>
+                        </g>
+                    </g>
+                    <path d="M16,0 C7.1637722,0 0,7.1637722 0,16 C0,24.836758 7.16350241,32 16,32 C24.8364976,32 32,24.836758 32,16 C32,7.1637722 24.8362278,0 16,0 Z M16,1.6 C23.9525722,1.6 30.4,8.0474278 30.4,16 C30.4,23.9530894 23.952855,30.4 16,30.4 C8.04714499,30.4 1.6,23.9530894 1.6,16 C1.6,8.0474278 8.0474278,1.6 16,1.6 Z" id="Icon-Fill" fill="#002979"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
