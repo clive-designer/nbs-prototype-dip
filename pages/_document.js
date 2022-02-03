@@ -48,25 +48,16 @@ class dipDocument extends Document {
           />
           <link
             rel="preload"
-            href="assets/NBS-Medium.woff2"
+            href="/assets/NBS-Medium.woff2"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="assets/NBS-Medium.woff"
+            href="/assets/NBS-Medium.woff"
             as="font"
             crossOrigin=""
           />
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/CabernetJFPro-Regular.woff2" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/CabernetJFPro-Regular.woff2" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/CabernetJFPro-Regular.woff" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/NBS-Bold.woff2" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/NBS-Bold.woff" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/NBS-Light.woff2" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/assets/NBS-Light.woff" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/NBS-Medium.woff2" rel="stylesheet" /> */}
-          {/* <link href="https://dip.mortgages.nationwide.co.uk/assets/NBS-Medium.woff" rel="stylesheet" /> */}
         </Head>
         <body>
           <Main />
