@@ -32,11 +32,15 @@ body {
       justify-content: space-between;
       padding: 16px 8px 16px 0;
 
-      .nav-login-icon {
-        span {
-          img[style] {
-            width: 34px !important;
-         }
+      .nav-login-icon, .nav-logout-icon {
+        span[style] {
+          padding-right: 8px !important;
+
+          span {
+            img[style] {
+              width: 34px !important;
+           }
+          }
         }
       }
       
