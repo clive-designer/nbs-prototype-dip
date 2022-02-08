@@ -1,13 +1,86 @@
 @import '../../styles/colours';
 
-.dashboardHero {
-    background: $colourInteractionSuccess10;
-    width: 280px;
+.dashboardMainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: none;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    gap: 0;
+
+    .dashboardMain {
+        flex: 1;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    @media (min-width: 480px) {
+		flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 32px;
+
+        .dashboardMain {
+            flex: 1;
+            max-width: 60%;
+            flex-basis: 60%;
+        }
+	}
+}
+
+.dashboardImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: none;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    gap: 0;
+
+    .dashboardImage {
+        flex: 1;
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-top: 32px;
+    }
+
+    @media (min-width: 480px) {
+		// flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 32px;
+
+        .dashboardImage {
+        }
+	}
 }
 
 .messageSuccess {
     background: $colourInteractionSuccess10;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 16px;
+    margin: 16px 0 0 0;
+    padding: 16px;
     border-radius: 8px;
-    padding: 32px;
-    margin-top: 16px;
+
+    .messageSuccessIcon {
+        width: 32px;
+    }
+
+    .messageSuccessText {
+        flex: 1;
+
+        p {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    @media (min-width: 480px) {
+        padding: 32px;
+    }
 }

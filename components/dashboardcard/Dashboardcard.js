@@ -2,7 +2,10 @@ import styles from './Dashboardcard.module.scss'
 
 // How to work with local images https://nextjs.org/docs/basic-features/image-optimization#local-images
 import Image from 'next/image';
-import houseMobile from '../../public/images/House-Startpage-Mobile.svg';
+import houseMain from '../../public/images/house-main-dashboard.svg';
+import step1dashboard from '../../public/images/step1-dashboard.svg';
+import step2dashboard from '../../public/images/step2-dashboard.svg';
+import step3dashboard from '../../public/images/step3-dashboard.svg';
 import successIcon from '../../public/images/success-icon.svg';
 
 import Link from 'next/link';
@@ -14,7 +17,7 @@ const Dashboardcard = () => {
             <div className={styles.dashboardCard}>
                 <div className={styles.dashboardCardBody}>
                     <div className={styles.dashboardCardImg}>
-                        <Image src={houseMobile} alt="Image of house"/> 
+                        <Image src={step1dashboard} alt="Image of house"/> 
                     </div>
                     <div className={styles.dashboardCardText}>
                         <span className={styles.labelSuccess}>Complete</span>
@@ -40,7 +43,7 @@ const Dashboardcard = () => {
             <div className={styles.dashboardCard}>
                 <div className={styles.dashboardCardBody}>
                     <div className={styles.dashboardCardImg}>
-                        <Image src={houseMobile} alt="Image of house"/>
+                        <Image src={step2dashboard} alt="Image of house"/>
                     </div>
                     <div className={styles.dashboardCardText}>
                         <h3>Step 2: Tell us about your new home</h3>
@@ -55,7 +58,7 @@ const Dashboardcard = () => {
             <div className={styles.dashboardCard}>
                 <div className={styles.dashboardCardBody}>
                     <div className={styles.dashboardCardImg}>
-                        <Image src={houseMobile} alt="Image of house"/>
+                        <Image src={step3dashboard} alt="Image of house"/>
                     </div>
                     <div className={styles.dashboardCardText}>
                         <h3>Step 3: Chat to a mortgage expert</h3>
