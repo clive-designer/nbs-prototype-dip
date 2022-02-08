@@ -8,7 +8,7 @@ import styles from './Houseimage.module.scss';
 const Houseimage = () => {
     return (
         <div className={styles.house}>
-            <Link href="https://nbs.invisionapp.com/console/share/MW387M6FFB/846267273">
+            <Link href="https://nbs.invisionapp.com/console/share/6Q4KPM8W7VJ">
                 <a target="_blank">
                     <Image src={houseMobile} alt="Image of house"/>
                 </a>

@@ -2,7 +2,6 @@ import styles from './Dashboardcard.module.scss'
 
 // How to work with local images https://nextjs.org/docs/basic-features/image-optimization#local-images
 import Image from 'next/image';
-import houseMain from '../../public/images/house-main-dashboard.svg';
 import step1dashboard from '../../public/images/step1-dashboard.svg';
 import step2dashboard from '../../public/images/step2-dashboard.svg';
 import step3dashboard from '../../public/images/step3-dashboard.svg';

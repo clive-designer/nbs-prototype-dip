@@ -17,8 +17,8 @@ const Resultcard = () => {
                 </div>
             </div>
             
-            <h2 className="h2-cabernet">&pound;200,000 over 31 years 2 months</h2>
-            <p className="p-smaller">We have emailed your Decision in Principle certificate to: <strong>XX&#x00040;XX.com</strong> </p>
+            <h2 className="h2-cabernet">&pound;200,000 over 31 years</h2>
+            <p className="p-smaller">We have emailed your Decision in Principle certificate to: <strong>jamie.bromley&#x00040;gmail.com</strong> </p>
             <Link href="/access-dashboard">
                 <a className="nbs-btn-secondary">Download as PDF</a>
             </Link>

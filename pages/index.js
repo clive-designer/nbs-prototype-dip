@@ -18,7 +18,7 @@ export default function Home() {
         <hr className="hr-red" />
         <h2>Your result</h2>
         <Resultcard />
-        <h3>Did you know could:</h3>
+        <h3>Did you know you could:</h3>
         <Optioncard />
         <h3>Updating your Decision in Principle</h3>
         <p>If something changes - like the amount you&apos;d like to borrow or how long you want to borrow for - you can review and edit your DIP and get a new result.</p>
