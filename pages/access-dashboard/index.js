@@ -1,9 +1,8 @@
 import React from "react";
 import { useUser } from '@auth0/nextjs-auth0';
+import Link from 'next/link';
 
 import styles from './Access-dashboard.module.scss';
-
-import Link from 'next/link';
 
 const AccessDashboard = () => {    
     const { user, error, isLoading } = useUser();

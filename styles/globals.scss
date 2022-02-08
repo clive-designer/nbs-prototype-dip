@@ -34,13 +34,13 @@ body {
 
       .nav-login-icon {
         span {
-          .login-icon {
-            &:hover {
-              fill: pink;
-            }
-          }
+          img[style] {
+            width: 34px !important;
+         }
         }
       }
+
+
 
       .nav-ref {
         margin-right: 32px;
