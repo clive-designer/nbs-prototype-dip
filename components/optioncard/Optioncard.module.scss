@@ -8,6 +8,12 @@
     column-gap: 16px;
     padding: 16px;
 
+    .optionCardIcon {
+      @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+        margin-right: 16px;
+      }
+    }
+
     .optionCardText {
       p {
         margin: 0;

@@ -12,6 +12,12 @@
       margin: 0 -16px -16px -16px;
       padding: 16px;
 
+      .resultCardIcon {
+        @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+          margin-right: 16px;
+        }
+      }
+
       .resultCardText {
         padding: 0 32px 0 0;
         h4 {

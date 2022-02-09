@@ -30,6 +30,10 @@
 
         .dbCardFooterIcon {
             width: 32px;
+
+            @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+                margin-right: 16px;
+              }
         }
 
         .dbCardFooterText {
