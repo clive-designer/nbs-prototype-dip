@@ -7,7 +7,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <UserProvider>
       <Layout>
-      <Component {...pageProps} />
+        <h1>Auth0 prototype</h1>
+        <p>This prototype was used for user testing - 10th Feb 2022</p>
+        {/* To show the content of this app uncommment line 13 below */}
+      {/* <Component {...pageProps} /> */}
       </Layout>
     </UserProvider>
   )
