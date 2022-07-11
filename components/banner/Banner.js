@@ -20,7 +20,7 @@ export default function Banner () {
         }}
         >
         <p className="description">
-            <Wave /> There's something new avialable, right now!
+            <Wave /> Theres something new avialable, right now!
         </p>
         <motion.button
             className="close-btn"

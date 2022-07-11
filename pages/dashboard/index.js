@@ -19,7 +19,7 @@ import Image from 'next/image';
 import houseMain from '../../public/images/house-main-sm-dashboard.svg';
 import successIcon from '../../public/images/success-icon.svg';
 
-export default function dashboard() {
+export default function Dashboard() {
 // const dashboard = () => {
 
     // Nudge ui
