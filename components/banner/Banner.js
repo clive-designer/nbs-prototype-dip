@@ -7,7 +7,7 @@ export default function Banner () {
       <div>
         <motion.aside
         className="overlay"
-        whileInView={{ backgroundColor: "#2b0687" }}
+        whileInView={{ backgroundColor: "#E5F0F9" }}
         initial={{ backgroundColor: "#dadada" }}
         exit={{
             opacity: 0,
@@ -20,7 +20,7 @@ export default function Banner () {
         }}
         >
         <p className="description">
-            <Wave /> Theres something new avialable, right now!
+            <Wave /> <strong>Tip:</strong> Let us know your contact preferences?
         </p>
         <motion.button
             className="close-btn"

@@ -50,16 +50,12 @@ export default function Dashboard() {
                     <p className="p-lead">Take the next steps towards your new home. We&apos;ll save your progress so you can come back when you like.</p>
                     <h2>Apply for your mortgage in just 3 steps</h2>
                     <BouncyArrow />
-                        <p style={{ height: "50vh" }}>Keep scrolling</p>
+                    <p style={{ height: "20vh" }}>Keep scrolling</p>
                         <div className="overlay-wrapper" >
                             <AnimatePresence>
                             {!wasDismissed && <Banner onDismiss={dismiss} />}
                             </AnimatePresence>
-                        </div>
-                    <BouncyArrow />
-                    <p style={{ height: "50vh" }}>
-                        Now scroll a bit more to see it stick to the top of the viewport
-                    </p>
+                        </div>                 
                     <Dashboardcard />
                 </div>
             </div>
