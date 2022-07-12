@@ -18,7 +18,7 @@ const Contactprefs = () => {
                     </div>
                     <div className={styles.dashboardCardText}>
                         <h3>Let&apos;s stay in touch</h3>
-                        <p>We can send you reminders and support with your next steps. Manage your preferences to let us know you're happy to get these emails.</p>
+                        <p>We can send you reminders and support with your next steps. Manage your preferences to let us know you&apos;re happy to get these emails.</p>
                         <Link href="#">
                             <a className="nbs-btn-secondary">Manage email preferences</a>
                         </Link>
