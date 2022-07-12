@@ -65,7 +65,7 @@ export default function Dashboard() {
 
                     <Contactprefs />
 
-                    <p style={{ height: "30vh" }}></p>
+                    <p style={{ height: "34vh" }}></p>
                 </div>
             </div>
 

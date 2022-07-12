@@ -14,7 +14,7 @@ const Contactprefs = () => {
             <div className={styles.dashboardCard}>
                 <div className={styles.dashboardCardBody}>
                     <div className={styles.dashboardCardImg}>
-                        <Image src={step3dashboard} alt="Image of house"/>
+                        {/* <Image src={step3dashboard} alt="Image of house"/> */}
                     </div>
                     <div className={styles.dashboardCardText}>
                         <h3>Let&apos;s stay in touch</h3>

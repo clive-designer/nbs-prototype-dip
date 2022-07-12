@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Wave from "../wave/Wave";
+import Link from "next/link";
 
 // export default function Banner({ onDismiss }: { onDismiss: () => void }) {
 export default function Banner () {
@@ -20,7 +21,8 @@ export default function Banner () {
         }}
         >
         <p className="description">
-            <Wave /> <strong>Tip:</strong> Let&apos;s stay in touch. Manage your email preferences
+            <Wave /> <strong>Tip:</strong> Let&apos;s stay in touch. 
+            <Link href="#"><a className="nbs-link" style={{ fontSize: "16px" }}> Manage your email preferences</a></Link>
         </p>
         <motion.button
             className="close-btn"
