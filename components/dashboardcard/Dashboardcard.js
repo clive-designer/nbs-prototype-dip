@@ -1,5 +1,17 @@
 import styles from './Dashboardcard.module.scss'
 
+// Nudge animation: https://blog.sethcorker.com/react-framer-motion-animate-when-scrolled-into-view/
+// https://codesandbox.io/s/framer-motion-animate-when-scrolled-into-view-7zksx?
+
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import BouncyArrow from "../../components/bouncyarrow/BouncyArrow";
+import Banner from "../../components/banner/Banner";
+
+// 
+
+
+
 // How to work with local images https://nextjs.org/docs/basic-features/image-optimization#local-images
 import Image from 'next/image';
 import step1dashboard from '../../public/images/step1-dashboard.svg';
@@ -11,6 +23,13 @@ import Link from 'next/link';
 
 
 const Dashboardcard = () => {
+
+        // Nudge ui
+        const [wasDismissed, setWasDismissed] = useState(false);
+        const dismiss = () => setWasDismissed(true);
+        const restore = () => setWasDismissed(false);
+        // 
+
     return (
         <div>
             <div className={styles.dashboardCard}>
@@ -52,6 +71,14 @@ const Dashboardcard = () => {
                         </Link>
                     </div>
                 </div>
+            </div>
+
+            {/* <BouncyArrow /> */}
+            {/* <p style={{ height: "20vh" }}>Keep scrolling</p> */}
+            <div className="overlay-wrapper" >
+                <AnimatePresence>
+                {!wasDismissed && <Banner onDismiss={dismiss} />}
+                </AnimatePresence>
             </div>
 
             <div className={styles.dashboardCard}>

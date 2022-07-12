@@ -20,7 +20,7 @@ export default function Banner () {
         }}
         >
         <p className="description">
-            <Wave /> <strong>Tip:</strong> Let us know your contact preferences?
+            <Wave /> <strong>Tip:</strong> Let&apos;s stay in touch. Manage your email preferences
         </p>
         <motion.button
             className="close-btn"

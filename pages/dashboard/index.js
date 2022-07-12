@@ -4,6 +4,8 @@ import Link from 'next/link';
 
 import styles from './Dashboard.module.scss';
 import Dashboardcard from "../../components/dashboardcard/Dashboardcard";
+import Contactprefs from "../../components/contactprefs/Contactprefs";
+
 
 // Nudge animation: https://blog.sethcorker.com/react-framer-motion-animate-when-scrolled-into-view/
 // https://codesandbox.io/s/framer-motion-animate-when-scrolled-into-view-7zksx?
@@ -49,22 +51,29 @@ export default function Dashboard() {
                     <hr className="hr-red" />
                     <p className="p-lead">Take the next steps towards your new home. We&apos;ll save your progress so you can come back when you like.</p>
                     <h2>Apply for your mortgage in just 3 steps</h2>
-                    <BouncyArrow />
-                    <p style={{ height: "20vh" }}>Keep scrolling</p>
+              
+                    <Dashboardcard />
+
+                    {/* <BouncyArrow /> */}
+                    {/* <p style={{ height: "20vh" }}>Keep scrolling</p>
                         <div className="overlay-wrapper" >
                             <AnimatePresence>
                             {!wasDismissed && <Banner onDismiss={dismiss} />}
                             </AnimatePresence>
-                        </div>                 
-                    <Dashboardcard />
+                        </div>    */}
+                    <hr className={styles.dashboardHr}/>
+
+                    <Contactprefs />
+
+                    <p style={{ height: "30vh" }}></p>
                 </div>
             </div>
 
-            <div className={styles.dashboardImgContainer}>
+            {/* <div className={styles.dashboardImgContainer}>
                 <div className={styles.dashboardImage}>
                     <Image src={houseMain} alt="Image of house"/>     
                 </div>
-            </div>
+            </div> */}
         </div>
 
     )
