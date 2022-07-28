@@ -42,7 +42,7 @@ export default function Dashboard() {
                             <p>You&apos;re logged in securely</p>
                         </div>
                     </div>
-                    <h1>Welcome to your mortgage dashboard</h1>
+                    <h1>Welcome to your mortgage hub</h1>
                     {wasDismissed && (
                         <button onClick={restore} className="restore-btn">
                         Bring back the banner!

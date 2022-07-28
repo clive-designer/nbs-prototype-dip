@@ -9,10 +9,10 @@ export default function Banner () {
         <motion.aside
         className="overlay"
         whileInView={{ backgroundColor: "#E5F0F9" }}
-        initial={{ backgroundColor: "#dadada" }}
+        initial={{ backgroundColor: "#F3F3F4" }}
         exit={{
             opacity: 0,
-            backgroundColor: "#dadada",
+            backgroundColor: "#F3F3F4",
             transition: { backgroundColor: { delay: 0 }, opacity: { delay: 0.1 } }
         }}
         transition={{
@@ -20,18 +20,14 @@ export default function Banner () {
             delay: 0.5
         }}
         >
-        <p className="description">
-            <Wave /> <strong>Tip:</strong> Let&apos;s stay in touch. 
+        <div className="description">
+            <Wave /> 
+            <div className="tipcontent">
+            <strong>Tip:</strong> Get reminders and support with your application.
             <Link href="#"><a className="nbs-link" style={{ fontSize: "16px" }}> Manage your email preferences</a></Link>
-        </p>
-        <motion.button
-            className="close-btn"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-        >
-            Close
-        </motion.button>
+            </div>
+
+        </div>
         </motion.aside>
       </div>
   );

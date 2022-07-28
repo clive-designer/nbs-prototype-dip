@@ -58,6 +58,14 @@ const Dashboardcard = () => {
                 </div>
             </div>
 
+            {/* <BouncyArrow /> */}
+            {/* <p style={{ height: "20vh" }}>Keep scrolling</p> */}
+            <div className="overlay-wrapper" >
+                <AnimatePresence>
+                {!wasDismissed && <Banner onDismiss={dismiss} />}
+                </AnimatePresence>
+            </div>
+
             <div className={styles.dashboardCard}>
                 <div className={styles.dashboardCardBody}>
                     <div className={styles.dashboardCardImg}>
@@ -71,14 +79,6 @@ const Dashboardcard = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
-
-            {/* <BouncyArrow /> */}
-            {/* <p style={{ height: "20vh" }}>Keep scrolling</p> */}
-            <div className="overlay-wrapper" >
-                <AnimatePresence>
-                {!wasDismissed && <Banner onDismiss={dismiss} />}
-                </AnimatePresence>
             </div>
 
             <div className={styles.dashboardCard}>

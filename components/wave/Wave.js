@@ -7,10 +7,10 @@ export default function Wave() {
     <motion.div
       className="wave"
       whileInView={{ scale: [1.0, 1.1, 1.0] }}
-      animate={{ rotate: [8, 0, -8, 0, 8, 0, -8, 0, 8, 0, -8, 0] }}
+      animate={{ rotate: [4, 0, -4, 0, 4, 0, -4, 0, 4, 0, -4, 0] }}
       transition={{
-        rotate: { duration: 1.2, repeat: Infinity, repeatDelay: 3 },
-        scale: { duration: 1, delay: 3 }
+        rotate: { duration: .8, repeat: Infinity, repeatDelay: 4 },
+        scale: { duration: 1, delay: 4 }
       }}
       initial={{ rotate: 0 }}
     >
