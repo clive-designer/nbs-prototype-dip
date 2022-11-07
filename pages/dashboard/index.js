@@ -11,18 +11,38 @@ import Contactprefs from "../../components/contactprefs/Contactprefs";
 // https://codesandbox.io/s/framer-motion-animate-when-scrolled-into-view-7zksx?
 
 import { AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BouncyArrow from "../../components/bouncyarrow/BouncyArrow";
 import Banner from "../../components/banner/Banner";
 
-// 
+// https://fkhadra.github.io/react-toastify/installation
+import { ToastContainer, toast, cssTransition } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
 
 import Image from 'next/image';
 import houseMain from '../../public/images/house-main-sm-dashboard.svg';
 import successIcon from '../../public/images/success-icon.svg';
 
 export default function Dashboard() {
-// const dashboard = () => {
+    // const dashboard = () => {
+
+    // react-toastify - with onClick button method
+    // const notify = () => {
+    //     toast.success("You've logged in securely");
+    //   };
+
+
+    // https://stackoverflow.com/questions/70562587/how-do-i-make-to-appear-the-react-toastify-without-using-onclick-button-it-shou
+    // How to get notification to show on page load without onClick button
+    useEffect(() => {
+        const notify = () => toast.success("You've logged in securely", {
+          autoClose: 8000
+        });
+    
+        notify();
+      }, [])
+    
 
     // Nudge ui
     const [wasDismissed, setWasDismissed] = useState(false);
@@ -34,14 +54,16 @@ export default function Dashboard() {
         <div>
             <div className={styles.dashboardMainContainer}>
                 <div className={styles.dashboardMain}>
-                    <div className={styles.messageSuccess}>
+                    {/* <button onClick={notify}>Notify !</button> */}
+                    <ToastContainer />
+                    {/* <div className={styles.messageSuccess}>
                         <div className={styles.messageSuccessIcon}>
                             <Image src={successIcon} alt="Image of tick"/>
                         </div>  
                         <div className={styles.messageSuccessText}>
                             <p>You&apos;re logged in securely</p>
                         </div>
-                    </div>
+                    </div> */}
                     <h1>Welcome to your mortgage hub</h1>
                     {wasDismissed && (
                         <button onClick={restore} className="restore-btn">

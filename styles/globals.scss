@@ -265,3 +265,53 @@ h2, h3, h4 {
 .wave {
   display: inline-block;
 }
+
+// Override react-toastify style: https://fkhadra.github.io/react-toastify/how-to-style
+
+.Toastify__toast-container {
+  top: auto !important;
+  right: auto !important;
+  position: relative !important;
+  width: auto !important;
+  margin-top: 32px !important;
+  .Toastify__toast {
+    transform: translateX(0) !important;
+    box-shadow: none !important;
+    padding: 16px;
+  }
+  @media (min-width: 480px) {
+		margin-top: 0;
+    .Toastify__toast {
+      padding: 32px;
+    }
+	}
+}
+
+.Toastify__toast-theme--light {
+  background: #EBF3EB !important;
+}
+
+.Toastify__toast-body {
+  color: #42424C !important;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'NBS' !important;
+  @media (min-width: 480px) {
+		font-size: 20px;
+	}
+}
+
+.Toastify__progress-bar {
+  background: #3B8634 !important;
+  height: 3px !important;
+}
+
+.Toastify__toast-icon {
+  svg {
+    fill: #3B8634;
+  }
+}
+
+.Toastify__close-button {
+  align-self: center !important;
+}
