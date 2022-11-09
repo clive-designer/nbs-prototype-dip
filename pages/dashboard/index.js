@@ -103,4 +103,4 @@ export default function Dashboard() {
 
 // export default dashboard;
 
-// export const getServerSideProps = withPageAuthRequired();
+export const getServerSideProps = withPageAuthRequired();
