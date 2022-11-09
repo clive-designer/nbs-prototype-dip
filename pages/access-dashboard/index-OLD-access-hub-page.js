@@ -4,11 +4,6 @@ import Link from 'next/link';
 
 import styles from './Access-dashboard.module.scss';
 
-import accessPageContent from "./accessPageContent";
-import IconList from "../../components/iconList/IconList";
-import Memberbanner from "../../components/memberbanner/Memberbanner";
-
-
 const AccessDashboard = () => {    
     const { user, error, isLoading } = useUser();
 
@@ -36,22 +31,12 @@ const AccessDashboard = () => {
 
     return (
         <div className={styles.accessDashboardContainer}>
-            <h1>{accessPageContent.h1}</h1>
-            <hr className="hr-red" />
-            <p className="p-lead">{accessPageContent.bodyContent.paraLead}</p>
-            <IconList />
-            <h2 className="h2-cabernet">{accessPageContent.h2}</h2>
-            <p>{accessPageContent.bodyContent.paraBody}</p>
-            <p className="p-small">{accessPageContent.bodyContent.paraSmall}</p>
-
+            <h1>Access your mortgage dashboard</h1>
+            <p className={styles.pAccessDashboard}>When you log in, we may ask you to go through a 2-step verification process using your mobile device and email account. This helps us keep your information safe.</p>
 
             <Link href="/dashboard/">
-              <a className="nbs-btn-primary">Access your mortgage hub</a>
+              <a className="nbs-btn-primary">Log in</a>
             </Link>
-
-            <hr />
-
-            <Memberbanner />
 
         </div>
     )
