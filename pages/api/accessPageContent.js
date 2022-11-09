@@ -8,4 +8,4 @@ const accessPageContent = {
     },
 }
 
-export default accessPageContent
+export default accessPageContent;

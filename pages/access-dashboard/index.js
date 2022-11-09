@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import styles from './Access-dashboard.module.scss';
 
-import accessPageContent from "./accessPageContent";
+import accessPageContent from "../api/accessPageContent";
 import IconList from "../../components/iconList/IconList";
 import Memberbanner from "../../components/memberbanner/Memberbanner";
 
