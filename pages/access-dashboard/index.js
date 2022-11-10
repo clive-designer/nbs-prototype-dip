@@ -7,6 +7,7 @@ import styles from './Access-dashboard.module.scss';
 import accessPageContent from "../api/accessPageContent";
 import IconList from "../../components/iconList/IconList";
 import Memberbanner from "../../components/memberbanner/Memberbanner";
+import Asideimage from "../../components/Asideimage/Asideimage";
 
 const AccessDashboard = () => {
   const { user, error, isLoading } = useUser();
@@ -34,23 +35,26 @@ const AccessDashboard = () => {
   }
 
   return (
-    <div className={styles.accessDashboardContainer}>
-      <h1>{accessPageContent.h1}</h1>
-      <hr className="hr-red" />
-      <p className="p-lead">{accessPageContent.bodyContent.paraLead}</p>
-      <IconList />
-      <h2 className="h2-cabernet">{accessPageContent.h2}</h2>
-      <p>{accessPageContent.bodyContent.paraBody}</p>
-      <p className="p-small">{accessPageContent.bodyContent.paraSmall}</p>
+    <div className={styles.accessHubContainer}>
+      <div className={styles.accessHubMain}>
+        <h1>{accessPageContent.h1}</h1>
+        <hr className="hr-red" />
+        <p className="p-lead">{accessPageContent.bodyContent.paraLead}</p>
+        <IconList />
+        <h2 className="h2-cabernet">{accessPageContent.h2}</h2>
+        <p>{accessPageContent.bodyContent.paraBody}</p>
+        <p className="p-small">{accessPageContent.bodyContent.paraSmall}</p>
+        <Link href="/dashboard/">
+          <a className="nbs-btn-primary">Access your mortgage hub</a>
+        </Link>
+        <hr />
+        <Memberbanner />
+      </div>
 
+      <div className={styles.accessHubAside}>
+        <Asideimage />
+      </div>
 
-      <Link href="/dashboard/">
-        <a className="nbs-btn-primary">Access your mortgage hub</a>
-      </Link>
-
-      <hr />
-
-      <Memberbanner />
 
     </div>
   )
