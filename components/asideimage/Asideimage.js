@@ -6,11 +6,7 @@ import Link from 'next/link';
 const Asideimage = () => {
     return (
         <div>
-            <Link href="https://nbs.invisionapp.com/console/share/6Q4KPM8W7VJ">
-                <a target="_blank">
-                    <Image src={asideImage} alt="Image of member offering cake"/>
-                </a>
-            </Link>   
+            <Image src={asideImage} alt="Image of member offering cake" />
         </div>
     );
 }

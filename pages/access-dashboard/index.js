@@ -7,7 +7,7 @@ import styles from './Access-dashboard.module.scss';
 import accessPageContent from "../api/accessPageContent";
 import IconList from "../../components/iconList/IconList";
 import Memberbanner from "../../components/memberbanner/Memberbanner";
-import Asideimage from "../../components/Asideimage/Asideimage";
+import Asideimage from "../../components/asideimage/Asideimage";
 
 const AccessDashboard = () => {
   const { user, error, isLoading } = useUser();
