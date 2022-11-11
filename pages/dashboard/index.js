@@ -22,7 +22,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 import Image from 'next/image';
 import houseMain from '../../public/images/house-main-sm-dashboard.svg';
-import successIcon from '../../public/images/success-icon.svg';
+import successIcon from '../../public/images/success-icon1.svg';
 import NotLivePerson from "../../components/notliveperson/Notliveperson";
 
 export default function Dashboard() {
@@ -107,7 +107,11 @@ export default function Dashboard() {
             <NotLivePerson toggle={nlpModalState} action={opennlpModal} />
             {/* Way to show on screen that true/false value for nlpModalState */}
             {/* {nlpModalState.toString()} */}
-            <span className="nbs-btn-secondary togglemodal" onClick={opennlpModal}>Need help?</span>
+
+            <div className="togglemodal-container">
+                <span className="togglemodal" onClick={opennlpModal}>Need help?</span>
+            </div>
+
         </div>
 
     )

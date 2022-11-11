@@ -430,8 +430,55 @@ hr {
 }
 
 // Need help Not live person chatbot
-.togglemodal {
+.togglemodal-container {
+  margin: auto 1.5% 1.5% auto;
+  padding: 0px;
+  border-style: solid;
+  border-width: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  list-style: outside none none;
+  letter-spacing: normal;
+  line-height: normal;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: normal;
+  word-spacing: normal;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(0, 41, 121);
+  border-radius: 30px;
+  width: 118px;
+  height: 36px;
+  cursor: pointer;
+  display: block;
+  z-index: 107158;
   position: fixed;
-  bottom: 1rem * 2;
-  right: 1rem * 2;
+  inset: auto 0px 0px auto;
+
+  .togglemodal {
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    border-width: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    list-style: outside none none;
+    letter-spacing: normal;
+    line-height: normal;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: normal;
+    word-spacing: normal;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 41, 121);
+    top: 10px;
+    left: 16px;
+    font-size: 16px;
+    z-index: 600;
+  }
 }

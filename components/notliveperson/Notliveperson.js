@@ -8,8 +8,26 @@ export default function NotLivePerson(props) {
     return (
         <div className={`${styles.NLPContainer} ${nlpModalState ? styles.active : ''}`}>
             <div className={styles.NLPModal}>
-                <h1>Not live person modal content</h1>
-                <div className={styles.NLPClose} onClick={action}></div>
+                <div className={styles.NLPModalHeader}>
+                    <div className={styles.NLPTitle}>
+                        <p>Chat with us</p>
+                    </div>
+                    <div className={styles.NLPContols}>
+                        <div className={styles.NLPClose} onClick={action}></div>
+                    </div>
+                </div>
+                <div className={styles.NLPModalBody}>
+                    <div className={styles.NBSAvatar}></div>
+                    <div className={styles.NBSpeechbubble}><p className="p-small">Welcome to Nationwide&apos;s messaging service</p></div>
+                </div>
+                <div className={styles.NLPModalFooter}>
+                    <div className={styles.NBSChatContent}>
+                        <p>Enter text here</p>
+                    </div>
+
+                    <div className={styles.NBSChatSubmit}></div>
+                </div>
+
             </div>
         </div>
     );

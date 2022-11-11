@@ -1,15 +1,17 @@
+@import '../../styles/colours';
+
 .NLPContainer {
     position: fixed;
     display: flex;
     width: 100%;
     height: 100vh;
-    top: 0;
-    left: 0;
+    bottom: 1em;
+    right: 0;
     justify-content: center;
     align-items: center;
-    border: 1px solid orange;
     visibility: hidden;
     opacity: 0;
+    z-index: 200000;
 
     &.active {
         visibility: visible;
@@ -19,18 +21,96 @@
     .NLPModal {
         width: 90%;
         height: 90%;
-        background: gainsboro;
+        background: $colourBrand01;
         position: relative;
-        .NLPClose {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-image: url('../../public/images/success-icon.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
+        border-radius: 8px;
+        border: 1px solid $colourUi20;
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 16px 3px;
+
+        .NLPModalHeader {
+            padding: 0 1em;
+
+            .NLPTitle {
+                color: white;
+            }
+
+            .NLPContols {
+                color: pink;
+
+                .NLPClose {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-image: url('../../public/images/IconCross.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .NLPModalBody {
+            background: $colourBrand03;
+            height: 456px;
+            padding: 1em 1em 3em;
+            display: flex;
+            align-items: flex-end;
+
+            .NBSAvatar {
+                background-image: url('../../public/images/NBS-Icon-mobile.svg');
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: .8em;
+            }
+
+            .NBSpeechbubble {
+                border: 1px $colourUi20 solid;
+                border-radius: 14px 14px 14px 0px;
+                padding: .8em;
+                height: fit-content;
+
+                p {
+                    margin-block: 0;
+                }
+
+            }
+        }
+
+        .NLPModalFooter {
+            background-color: $colourBrand03;
+            border-top: 1px $colourUi20 solid;
+            height: 60px;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+
+            .NBSChatContent {
+                margin-right: .8em;
+                p {
+                    margin-block: 0;
+                }
+            }
+
+            .NBSChatSubmit {
+                background-image: url('../../public/images/IconActionChevronRight.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+
+            }
         }
     }
+
+
+    @media (min-width: 480px) {
+		width: 340px;
+        right: 2em;
+        height: 656px;
+	}
 }

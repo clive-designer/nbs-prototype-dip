@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from './Result-card.module.scss'
 
 import Image from 'next/image';
-import successIcon from '../../public/images/success-icon.svg';
+import successIcon from '../../public/images/success-icon1.svg';
 
 const Resultcard = () => {
     return (

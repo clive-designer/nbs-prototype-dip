@@ -17,7 +17,7 @@ import Image from 'next/image';
 import step1dashboard from '../../public/images/step1-dashboard.svg';
 import step2dashboard from '../../public/images/step2-dashboard.svg';
 import step3dashboard from '../../public/images/step3-dashboard.svg';
-import successIcon from '../../public/images/success-icon.svg';
+import successIcon from '../../public/images/success-icon1.svg';
 
 import Link from 'next/link';
 

@@ -1,7 +1,7 @@
 import styles from './IconList.module.scss'
 
 import Image from 'next/image';
-import successIcon from '../../public/images/success-icon.svg';
+import successIcon from '../../public/images/success-icon1.svg';
 
 const IconList = () => {
     return (
