@@ -8,7 +8,7 @@ const IconList = () => {
         <div>
             <div className={styles.iconList}>
                 <div className={styles.iconListIcon}>
-                    <Image src={successIcon} alt="Image of tick"/>
+                    <Image src={successIcon} alt="Image of tick" />
                 </div>
                 <div className={styles.iconListText}>
                     <p>
@@ -18,7 +18,7 @@ const IconList = () => {
             </div>
             <div className={styles.iconList}>
                 <div className={styles.iconListIcon}>
-                    <Image src={successIcon} alt="Image of tick"/>
+                    <Image src={successIcon} alt="Image of tick" />
                 </div>
                 <div className={styles.iconListText}>
                     <p>
@@ -28,14 +28,14 @@ const IconList = () => {
             </div>
             <div className={styles.iconList}>
                 <div className={styles.iconListIcon}>
-                    <Image src={successIcon} alt="Image of tick"/>
+                    <Image src={successIcon} alt="Image of tick" />
                 </div>
                 <div className={styles.iconListText}>
-                    <p>
-                        <strong>Book an appointment</strong>
-                        <br />
-                        to complete your mortgage application with one of our mortgage experts
+                    <p><strong>Book an appointment</strong>
                     </p>
+                    <p className="p-small">to complete your mortgage application with one of our mortgage experts</p>
+
+
                 </div>
             </div>
 

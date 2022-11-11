@@ -32,12 +32,10 @@ const Cookiebanner = () => {
                                 <Image src={infoIcon} alt="Image of tick" />
                             </div>
                             <div className="messagebanner-text">
-                                <p><strong>Cookie information:&nbsp;</strong> This site uses cookies and by using the site you are consenting to this. Find out why we use cookies and how to manage your settings.<Link href="#">
-                                    <a className="">
-                                    More about cookies
-                                    </a>
+                                <p><strong>Cookie information:&nbsp;</strong> This site uses cookies and by using the site you are consenting to this. Find out why we use cookies and how to manage your settings.&nbsp;<Link href="#">
+                                    <a className="">More about cookies</a>
                                 </Link>
-                                    </p>
+                                </p>
                             </div>
                         </div>
                         <div className="messagebanner-close">

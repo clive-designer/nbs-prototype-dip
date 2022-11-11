@@ -14,7 +14,7 @@
 
   .iconListIcon {
 
-    // width: 40px;
+    width: 30px;
     @supports (-webkit-touch-callout: none) and (not (translate: none)) {
       margin-right: 16px;
     }
@@ -22,10 +22,13 @@
 
   .iconListText {
     width: 270px;
+    font-size: 1.125em;
 
     p {
       margin: 0;
-      font-size: 1.125em;
+    }
+    .p-small {
+      font-size: 15px;
     }
   }
 
@@ -33,10 +36,12 @@
 
     // padding: 32px;
     .iconListText {
-      width: auto;
+      width: 100%;
+      font-size: 1.4em;
 
-      p {
-        font-size: 1.4em;
+      .p-small {
+        font-size: 16px !important;
+        color: hotpink;
       }
     }
 
