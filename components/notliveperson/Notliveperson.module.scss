@@ -1,0 +1,36 @@
+.NLPContainer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .NLPModal {
+        width: 90%;
+        height: 90%;
+        background: gainsboro;
+        position: relative;
+        .NLPClose {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-image: url('../../public/images/success-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+}

@@ -23,6 +23,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import Image from 'next/image';
 import houseMain from '../../public/images/house-main-sm-dashboard.svg';
 import successIcon from '../../public/images/success-icon.svg';
+import NotLivePerson from "../../components/notliveperson/Notliveperson";
 
 export default function Dashboard() {
     // const dashboard = () => {
@@ -37,18 +38,24 @@ export default function Dashboard() {
     // How to get notification to show on page load without onClick button
     useEffect(() => {
         const notify = () => toast.success("You've logged in securely", {
-          autoClose: 8000
+            autoClose: 8000
         });
-    
+
         notify();
-      }, [])
-    
+    }, [])
+
 
     // Nudge ui
     const [wasDismissed, setWasDismissed] = useState(false);
     const dismiss = () => setWasDismissed(true);
     const restore = () => setWasDismissed(false);
     // 
+
+    // NotLivePerson state - Tut https://www.youtube.com/watch?v=RcA88ABRUds
+    const [nlpModalState, setnlpModalState] = useState(false)
+    function opennlpModal() {
+        setnlpModalState(!nlpModalState)
+    }
 
     return (
         <div>
@@ -67,13 +74,13 @@ export default function Dashboard() {
                     <h1>Welcome to your mortgage hub</h1>
                     {wasDismissed && (
                         <button onClick={restore} className="restore-btn">
-                        Bring back the banner!
+                            Bring back the banner!
                         </button>
                     )}
                     <hr className="hr-red" />
                     <p className="p-lead">Take the next steps towards your new home. We&apos;ll save your progress so you can come back when you like.</p>
                     <h2>Apply for your mortgage in just 3 steps</h2>
-              
+
                     <Dashboardcard />
 
                     {/* <BouncyArrow /> */}
@@ -83,7 +90,7 @@ export default function Dashboard() {
                             {!wasDismissed && <Banner onDismiss={dismiss} />}
                             </AnimatePresence>
                         </div>    */}
-                    <hr className={styles.dashboardHr}/>
+                    <hr className={styles.dashboardHr} />
 
                     <Contactprefs />
 
@@ -96,6 +103,11 @@ export default function Dashboard() {
                     <Image src={houseMain} alt="Image of house"/>     
                 </div>
             </div> */}
+
+            <NotLivePerson toggle={nlpModalState} action={opennlpModal} />
+            {/* Way to show on screen that true/false value for nlpModalState */}
+            {/* {nlpModalState.toString()} */}
+            <span className="nbs-btn-secondary togglemodal" onClick={opennlpModal}>Need help?</span>
         </div>
 
     )
@@ -103,4 +115,4 @@ export default function Dashboard() {
 
 // export default dashboard;
 
-export const getServerSideProps = withPageAuthRequired();
+// export const getServerSideProps = withPageAuthRequired();
