@@ -6,24 +6,23 @@ import styles from './Dashboard.module.scss';
 import Dashboardcard from "../../components/dashboardcard/Dashboardcard";
 import Contactprefs from "../../components/contactprefs/Contactprefs";
 
+import { AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 // Nudge animation: https://blog.sethcorker.com/react-framer-motion-animate-when-scrolled-into-view/
 // https://codesandbox.io/s/framer-motion-animate-when-scrolled-into-view-7zksx?
-
-import { AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
 import BouncyArrow from "../../components/bouncyarrow/BouncyArrow";
 import Banner from "../../components/banner/Banner";
+import NotLivePerson from "../../components/notliveperson/Notliveperson";
 
 // https://fkhadra.github.io/react-toastify/installation
 import { ToastContainer, toast, cssTransition } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
-
 import Image from 'next/image';
 import houseMain from '../../public/images/house-main-sm-dashboard.svg';
 import successIcon from '../../public/images/success-icon1.svg';
-import NotLivePerson from "../../components/notliveperson/Notliveperson";
+
 
 export default function Dashboard() {
     // const dashboard = () => {

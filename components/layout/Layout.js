@@ -19,13 +19,16 @@ const Layout = ({ children }) => {
                 <Navbar />
             </div>
             <div className="flex-banner-container">
-                {asPath !== '/dashboard' && <Welcomebanner />}
+                {/* How to conditionally check for multiple values stackoverflow.com/questions/63030124/using-or-operator-in-react-js-conditional-rendering */}
+                {/* Hides cookie banner on the hub and error page */}
+                { !['/dashboard', '/error'].includes(asPath) && <Welcomebanner />}
             </div>    
             <div className="flex-main-container">
                 {children}
             </div>
             <div className="flex-banner-container">
-                <Cookiebanner />
+                {/* Hides cookie banner on the error page */}
+                {asPath !== '/error' && <Cookiebanner />}
             </div>
         </div>
     );

@@ -49,13 +49,15 @@ const Navbar = () => {
                         <div className="nav-ref">
                             <p>&nbsp;</p>
                         </div>
-                        <div>
+                        {/* Removed the login icon Nov 2022, uncommnent below to show again */}
+                        {/* <div>
                             <Link href="/access-dashboard">
                                 <a className="nav-login-icon">
                                     {asPath !== '/access-dashboard' && <Image src={nbsLogin} alt="Log in" className={styles.iconLogin} />}
+                                    
                                 </a>
                             </Link>
-                        </div>
+                        </div> */}
                     </>
 
                 )}
