@@ -33,11 +33,10 @@ const ErrorPage = () => {
     return (
         <>
             <div className={styles.errorContainer}>
-                <h1>Sorry, something&apos;s gone wrong</h1>
-                <p className="p-lead">There was a technical issue that wasn&apos;t your fault.</p>
-                <p className="p-lead">We&apos;ve saved your information from Rightmove, so no need to worry.</p>
-                <p>Please try again in a few minutes, you&apos;ll need to return to your Rightmove result/confirmation email and follow the link to continue your home buying journey.</p>
-                <p>If you continue to have issues you can contact us using the &apos;Need help?&apos; web chat service on this page, which is available Monday to Friday 8am to 5pm, and Saturday 9am to 3pm.</p>
+                <h1>We&apos;re sorry something&apos;s gone wrong</h1>
+                <p className="p-lead">There was a technical issue on our end. But don&apos;t worry, we&apos;ve saved your information from Rightmove.</p>
+                <p>Please try again in a few minutes. You&apos;ll need to return to your confirmation email from Rightmove. Then follow the link to continue your home buying journey.</p>
+                <p>If you keep having issues, use the &apos;Need help&apos; web chat to get in touch. We&apos;re available Monday to Friday from 8am to 5pm and Saturday from 9am to 3pm.</p>
             </div>
             <NotLivePerson toggle={nlpModalState} action={opennlpModal} />
 
