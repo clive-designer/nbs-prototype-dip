@@ -37,7 +37,7 @@ const Navbar = () => {
                         <div>
                             <Link href="/api/auth/logout">
                                 <a className="nav-logout-icon">
-                                    <Image src={nbsLogout} alt="Log in" className={styles.iconLogout} />
+                                    <Image src={nbsLogout} alt="Log out" className={styles.iconLogout} />
                                 </a>
                             </Link>
                         </div>

@@ -41,18 +41,19 @@ body {
       align-items: center;
       padding: 16px 8px 16px 0;
 
-      .nav-login-icon, .nav-logout-icon {
+      .nav-login-icon,
+      .nav-logout-icon {
         span[style] {
           padding-right: 8px !important;
 
           span {
             img[style] {
               width: 34px !important;
-           }
+            }
           }
         }
       }
-      
+
       .nav-ref {
         margin-right: 32px;
       }
@@ -62,6 +63,7 @@ body {
   @media (min-width: 480px) {
     nav {
       padding: 1em 1rem 0.8em 1rem;
+
       .nav-logo-mobile {
         display: none;
       }
@@ -78,7 +80,7 @@ body {
 .flex-banner-container {
 
   .messagebanner-wrapper {
-    
+
     .messagebanner {
       padding: 1em 1rem;
       display: flex;
@@ -87,20 +89,20 @@ body {
       align-items: center;
       max-width: 1024px;
       margin: 0 auto;
-  
+
       .messagebanner-content {
         display: flex;
         align-items: center;
-  
+
         .messagebanner-icon {
           padding-right: .5em;
         }
-  
+
         .messagebanner-text {
-          color:$colourBrand03;
+          color: $colourBrand03;
         }
       }
-  
+
       .messagebanner-close {
         width: 100%;
       }
@@ -111,6 +113,7 @@ body {
     .messagebanner-wrapper {
       .messagebanner {
         flex-wrap: nowrap;
+
         .messagebanner-close {
           width: auto;
         }
@@ -144,8 +147,8 @@ a {
   cursor: pointer;
 
   @media (min-width: 480px) {
-		font-size: 20px;
-	}
+    font-size: 20px;
+  }
 }
 
 .nbs-link {
@@ -160,7 +163,10 @@ a {
 }
 
 // Typography
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: $colourTextHeadline;
 }
 
@@ -172,8 +178,8 @@ h1 {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 52px;
-	}
+    font-size: 52px;
+  }
 }
 
 .h2-cabernet {
@@ -184,8 +190,8 @@ h1 {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 40px;
-	}
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -195,8 +201,8 @@ h2 {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 40px;
-	}
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -206,11 +212,13 @@ h3 {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 28px;
-	}
+    font-size: 28px;
+  }
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -219,8 +227,8 @@ h2, h3, h4 {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 24px;
-	}
+    font-size: 24px;
+  }
 }
 
 p {
@@ -228,24 +236,26 @@ p {
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 20px;
-	}
+    font-size: 20px;
+  }
 }
+
 .p-small {
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 480px) {
-		font-size: 16px;
-	}
+    font-size: 16px;
+  }
 }
 
 hr {
   border: 1px solid $colourUi20;
   margin: 16px 0 32px 0;
+
   @media (min-width: 480px) {
-		margin: 32px 0 48px 0;
-	}
+    margin: 32px 0 48px 0;
+  }
 }
 
 .hr-red {
@@ -259,7 +269,8 @@ hr {
 // Buttons
 .nbs-btn-primary {
   display: block;
-  font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
+  font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  ;
   background: $colourInteractionPrimary100;
   color: $colourBrand03;
   text-align: center;
@@ -274,14 +285,15 @@ hr {
   }
 
   @media (min-width: 480px) {
-		display: inline-flex;
+    display: inline-flex;
     margin: 16px 0;
-	}
+  }
 }
 
 .nbs-btn-primary--navbar {
   display: inline-flex;
-  font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
+  font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  ;
   background: yellowgreen;
   color: $colourBrand03;
   text-align: center;
@@ -297,7 +309,8 @@ hr {
 
 .nbs-btn-secondary {
   display: block;
-  font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
+  font-family: 'NBS', ArialNarrow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  ;
   background: $colourBrand03;
   color: $colourBrand01;
   text-align: center;
@@ -314,9 +327,9 @@ hr {
   }
 
   @media (min-width: 480px) {
-		display: inline-flex;
+    display: inline-flex;
     width: auto;
-	}
+  }
 }
 
 // nudge ui
@@ -382,22 +395,34 @@ hr {
 // Override react-toastify style: https://fkhadra.github.io/react-toastify/how-to-style
 
 .Toastify__toast-container {
-  top: auto !important;
-  right: auto !important;
-  position: relative !important;
-  width: auto !important;
-  margin-top: 32px !important;
+  // top: auto !important;
+  // right: auto !important;
+  position: absolute !important;
+
+  // width: auto !important;
+  // margin-top: 32px !important;
   .Toastify__toast {
-    transform: translateX(0) !important;
+    // transform: translateX(0) !important;
     box-shadow: none !important;
     padding: 16px;
   }
+
   @media (min-width: 480px) {
-		margin-top: 0;
+    margin-top: 0;
+    position: fixed !important;
+
     .Toastify__toast {
-      padding: 32px;
+      padding: 0 1em;
     }
-	}
+  }
+}
+
+.Toastify__toast-container--top-center {
+  top: 91px !important;
+
+  @media (min-width: 480px) {
+    top: 1.6em !important;
+  }
 }
 
 .Toastify__toast-theme--light {
@@ -409,9 +434,10 @@ hr {
   font-weight: 600;
   font-size: 18px;
   font-family: 'NBS' !important;
+
   @media (min-width: 480px) {
-		font-size: 20px;
-	}
+    font-size: 20px;
+  }
 }
 
 .Toastify__progress-bar {
@@ -427,7 +453,90 @@ hr {
 
 .Toastify__close-button {
   align-self: center !important;
+  padding: 0 0 0 0.5em !important;
 }
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 3.8s ease-in both;
+  animation: slide-in-top 3.8s ease-in both;
+
+}
+
+.slide-out-top {
+  -webkit-animation: slide-out-top 6.6s ease-out both;
+  animation: slide-out-top 6.6s ease-out both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-5 16:6:34
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-top and slide-out-top
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+
 
 // Need help Not live person chatbot
 .togglemodal-container {

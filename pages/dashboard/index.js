@@ -16,7 +16,7 @@ import Banner from "../../components/banner/Banner";
 import NotLivePerson from "../../components/notliveperson/Notliveperson";
 
 // https://fkhadra.github.io/react-toastify/installation
-import { ToastContainer, toast, cssTransition } from 'react-toastify';
+import { ToastContainer, toast, cssTransition, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 import Image from 'next/image';
@@ -26,6 +26,11 @@ import successIcon from '../../public/images/success-icon1.svg';
 
 export default function Dashboard() {
     // const dashboard = () => {
+
+    const slideInOut = cssTransition({
+        enter: "slide-in-top",
+        exit: "slide-out-top"
+    });
 
     // react-toastify - with onClick button method
     // const notify = () => {
@@ -37,7 +42,10 @@ export default function Dashboard() {
     // How to get notification to show on page load without onClick button
     useEffect(() => {
         const notify = () => toast.success("You've logged in securely", {
-            autoClose: 8000
+            autoClose: 5000,
+            position: toast.POSITION.TOP_CENTER,
+            transition: slideInOut,
+            delay: 1500
         });
 
         notify();
