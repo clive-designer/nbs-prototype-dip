@@ -45,7 +45,7 @@ export default function Dashboard() {
             autoClose: 5000,
             position: toast.POSITION.TOP_CENTER,
             transition: slideInOut,
-            delay: 1500
+            delay: 800
         });
 
         notify();
