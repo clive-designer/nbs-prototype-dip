@@ -41,7 +41,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         const notify = () => toast.success("You've logged in securely", {
-            autoClose: 7000,
+            autoClose: 12000,
             position: toast.POSITION.BOTTOM_CENTER,
             transition: slideInOut
         });
