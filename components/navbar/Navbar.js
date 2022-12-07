@@ -47,8 +47,18 @@ const Navbar = () => {
                 {!isLoading && !user && (
                     <>
                         <div className="nav-ref">
-                            <p>&nbsp;</p>
+                            <p>Ref: M123456789</p>
                         </div>
+                        <div>
+                            <Link href="/api/auth/logout">
+                                <a className="nav-logout-icon">
+                                    <Image src={nbsLogout} alt="Log out" className={styles.iconLogout} />
+                                </a>
+                            </Link>
+                        </div>
+                        {/* <div className="nav-ref">
+                            <p>&nbsp;</p>
+                        </div> */}
                         {/* Removed the login icon Nov 2022, uncommnent below to show again */}
                         {/* <div>
                             <Link href="/access-dashboard">
