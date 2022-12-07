@@ -27,42 +27,51 @@ import successIcon from '../../public/images/success-icon1.svg';
 export default function Dashboard() {
     // const dashboard = () => {
 
-    const slideInOut = cssTransition({
-        enter: "slide-in-top",
-        exit: "slide-out-top"
-    });
-
     // react-toastify - with onClick button method
     // const notify = () => {
     //     toast.success("You've logged in securely");
     //   };
 
-
     // https://stackoverflow.com/questions/70562587/how-do-i-make-to-appear-the-react-toastify-without-using-onclick-button-it-shou
     // How to get notification to show on page load without onClick button
+    const slideInOut = cssTransition({
+        enter: "slide-in-bottom",
+        exit: "slide-out-bottom"
+    });
+
     useEffect(() => {
         const notify = () => toast.success("You've logged in securely", {
-            autoClose: 6000,
-            position: toast.POSITION.TOP_CENTER,
-            transition: slideInOut,
-            delay: 0
+            autoClose: 7000,
+            position: toast.POSITION.BOTTOM_CENTER,
+            transition: slideInOut
         });
 
         notify();
     }, [])
 
+    // setInterval to show 'Need help' button after 15seconds
+    // https://www.youtube.com/watch?v=jP62dlwaqpk & https://upmostly.com/tutorials/setinterval-in-react-components-using-hooks
+    const [delayComponent, setDelayComponent] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDelayComponent(!delayComponent);
+        }, 30000);
+        return () => clearInterval(interval);
+      }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    // I turned off linting as was getting lint error when running local build https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook)
+    
+    // NotLivePerson state - Tut https://www.youtube.com/watch?v=RcA88ABRUds
+    const [nlpModalState, setnlpModalState] = useState(false)
+    function opennlpModal() {
+        setnlpModalState(!nlpModalState)
+    }
 
     // Nudge ui
     const [wasDismissed, setWasDismissed] = useState(false);
     const dismiss = () => setWasDismissed(true);
     const restore = () => setWasDismissed(false);
     // 
-
-    // NotLivePerson state - Tut https://www.youtube.com/watch?v=RcA88ABRUds
-    const [nlpModalState, setnlpModalState] = useState(false)
-    function opennlpModal() {
-        setnlpModalState(!nlpModalState)
-    }
 
     return (
         <div>
@@ -115,9 +124,11 @@ export default function Dashboard() {
             {/* Way to show on screen that true/false value for nlpModalState */}
             {/* {nlpModalState.toString()} */}
 
-            <div className="togglemodal-container">
-                <span className="togglemodal" onClick={opennlpModal}>Need help?</span>
-            </div>
+            {delayComponent &&
+                <div className="togglemodal-container">
+                    <span className="togglemodal" onClick={opennlpModal}>Need help?</span>
+                </div>
+            }
 
         </div>
 
