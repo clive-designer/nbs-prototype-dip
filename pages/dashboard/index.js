@@ -42,10 +42,10 @@ export default function Dashboard() {
     // How to get notification to show on page load without onClick button
     useEffect(() => {
         const notify = () => toast.success("You've logged in securely", {
-            autoClose: 5000,
+            autoClose: 6000,
             position: toast.POSITION.TOP_CENTER,
             transition: slideInOut,
-            delay: 800
+            delay: 0
         });
 
         notify();
