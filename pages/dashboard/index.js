@@ -41,7 +41,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         const notify = () => toast.success("You've logged in securely", {
-            autoClose: 12000,
+            autoClose: 8000,
             position: toast.POSITION.BOTTOM_CENTER,
             transition: slideInOut
         });
@@ -56,7 +56,7 @@ export default function Dashboard() {
     useEffect(() => {
         const interval = setInterval(() => {
             setDelayComponent(!delayComponent);
-        }, 30000);
+        }, 0);
         return () => clearInterval(interval);
       }, []); // eslint-disable-line react-hooks/exhaustive-deps
     // I turned off linting as was getting lint error when running local build https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook)
@@ -137,4 +137,4 @@ export default function Dashboard() {
 
 // export default dashboard;
 
-export const getServerSideProps = withPageAuthRequired();
+// export const getServerSideProps = withPageAuthRequired();
